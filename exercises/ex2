@@ -1,0 +1,16 @@
+CREATE TABLE iphone(
+  name VARCHAR(50),
+  manufactorer VARCHAR(50),
+  price INTEGER,
+  units_sold INTEGER
+);
+
+INSERT INTO iphone (name, manufactorer, price, units_sold)
+VALUES
+  ('IPhone 4', 'Apple', 399, 9436),
+  ('Galaxy S', 'Samsung', 299, 2359),
+  ('N1280', 'Nokia', 199, 1925),
+  ('S5620 Monte', 'Nokia', 250, 2385)
+  
+SELECT name, price * units_sold AS revenue
+FROM iphone;
