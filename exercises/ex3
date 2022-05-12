@@ -1,0 +1,9 @@
+# We are once again working with the phones table. Write a query that will print the 
+#name and price of all phones that sold greater than 50000 units
+
+SELECT
+  name, price
+FROM
+  iphone
+WHERE
+  units_sold > 5000;
